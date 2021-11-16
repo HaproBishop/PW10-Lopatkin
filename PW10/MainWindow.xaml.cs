@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,9 +78,9 @@ namespace PW10
             if (Divisor.Text != "")
             {
                 int divisor = Convert.ToInt32(Divisor.Text);
-                for (int i = 0; i < listfornumbers.Count; i++)
+                foreach (int value in listfornumbers)
                 {
-                    if (listfornumbers[i] % divisor == 0) listformultiplenumbers.Add(listfornumbers[i]);//Нахождение кратных чисел
+                    if (value % divisor == 0) listformultiplenumbers.Add(value);//Нахождение кратных чисел
                 }
                 MultipleNumbers.ItemsSource = listformultiplenumbers;
                 if (listformultiplenumbers.Count == 0) MessageBox.Show($"К сожалению, нет кратных чисел для {divisor}", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -91,11 +92,11 @@ namespace PW10
         {
             if (VisualNumbers.SelectedItem != null)
             {
-                int countitems = VisualNumbers.SelectedItems.Count;
-                for (int i = 0; i < countitems; i++)
+                ArrayList list = new ArrayList(VisualNumbers.SelectedItems);
+                foreach (int value in list)
                 {
-                    listfornumbers.Remove(Convert.ToInt32(VisualNumbers.SelectedItems[0]));                   
-                    VisualNumbers.Items.Remove(VisualNumbers.SelectedItems[0]);
+                    listfornumbers.Remove(value);
+                    VisualNumbers.Items.Remove(value);
                 }
                 listformultiplenumbers.Clear();//Очистка итога(List) из-за изменения исходных чисел
                 MultipleNumbers.ItemsSource = null;//Очистка listbox'a из-за изменения
