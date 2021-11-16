@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>OneDrive.ico</ApplicationIcon>
+    <ApplicationIcon>LogoIco.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -98,9 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="OneDrive.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Icons\+.png" />
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\EnterTo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\LogoIco.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LogoIco.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

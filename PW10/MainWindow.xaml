@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW10"
         mc:Ignorable="d"
-        Title="PW10" MinHeight="428" MinWidth="635" ResizeMode="CanResize" Icon="OneDrive.ico" Height="428" Width="635" Background="#4C000000">
+        Title="PW10" MinHeight="428" MinWidth="635" ResizeMode="CanResize" Icon="Icons\LogoIco.ico" Height="428" Width="635" Background="#4C000000">
     <!--#region Styles-->
     <Window.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFA200FF"/>
